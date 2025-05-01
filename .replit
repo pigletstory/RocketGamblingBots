@@ -34,3 +34,12 @@ author = "agent"
 task = "shell.exec"
 args = "npm run dev"
 waitForPort = 5000
+
+[env]
+SESSION_SECRET = "7YqfjTnPx55bSGeV/HTLrSNj3PjLCqvp0+nISSATfgxJ9QTwI3hC3JQHZeT3RjOY+NEWaWifjuIZn/mvgYzVfA=="
+DATABASE_URL = "postgresql://neondb_owner:npg_UjP70rwXpyYk@ep-wandering-wildflower-a4p1dusw.us-east-1.aws.neon.tech/neondb?sslmode=require"
+PGDATABASE = "neondb"
+PGHOST = "ep-wandering-wildflower-a4p1dusw.us-east-1.aws.neon.tech"
+PGPORT = "5432"
+PGUSER = "neondb_owner"
+PGPASSWORD = "npg_UjP70rwXpyYk"
