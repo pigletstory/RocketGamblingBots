@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 221 83% 53%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.5rem;
+
+  /* Discord theme custom colors */
+  --discord-dark: 220 7% 18%;
+  --discord-darker: 220 7% 14%;
+  --discord-darkest: 220 7% 10%;
+  --discord-light: 223 7% 20%;
+  --discord-accent: 235 86% 65%;
+  --discord-text: 220 14% 87%;
+  --discord-muted: 214 8% 62%;
+
+  /* Casino theme custom colors */
+  --casino-green: 142 67% 30%;
+  --casino-red: 0 60% 50%;
+  --casino-gold: 43 100% 65%;
+  --casino-purple: 265 83% 63%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-[#36393F] text-[#DCDDDE];
+  }
+}
+
+/* Custom utility classes for Discord-like styling */
+@layer utilities {
+  .bg-discord-dark {
+    background-color: #36393F;
+  }
+  
+  .bg-discord-darker {
+    background-color: #2F3136;
+  }
+  
+  .bg-discord-darkest {
+    background-color: #202225;
+  }
+  
+  .bg-discord-light {
+    background-color: #40444B;
+  }
+  
+  .bg-discord-accent {
+    background-color: #5865F2;
+  }
+  
+  .text-discord-text {
+    color: #DCDDDE;
+  }
+  
+  .text-discord-muted {
+    color: #72767D;
+  }
+  
+  .bg-casino-green {
+    background-color: #1A7F37;
+  }
+  
+  .bg-casino-red {
+    background-color: #CF222E;
+  }
+  
+  .bg-casino-gold {
+    background-color: #FFC857;
+  }
+  
+  .bg-casino-purple {
+    background-color: #8B5CF6;
+  }
+  
+  .text-casino-green {
+    color: #1A7F37;
+  }
+  
+  .text-casino-red {
+    color: #CF222E;
+  }
+  
+  .text-casino-gold {
+    color: #FFC857;
+  }
+  
+  .text-casino-purple {
+    color: #8B5CF6;
+  }
+}
